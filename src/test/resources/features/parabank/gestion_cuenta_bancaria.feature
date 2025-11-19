@@ -8,6 +8,16 @@ Feature: Complete bank account management in ParaBank
   Scenario: A - Successful new user registration
     Given Juan navigates to ParaBank platform
     When Juan registers with the following information
+      | nombre    | Juan               |
+      | apellido  | Perez              |
+      | direccion | Calle 123          |
+      | ciudad    | Medellin           |
+      | estado    | Antioquia          |
+      | codigo    | 050001             |
+      | telefono  | 3001234567         |
+      | ssn       | 123-45-6789        |
+      | usuario   | juan.perez.test123 |
+      | password  | Password123        |
     Then Juan should see the welcome message
     And Juan should have access to his account
 
@@ -33,5 +43,7 @@ Feature: Complete bank account management in ParaBank
   @ActualizarInformacionContacto @Escenario5
   Scenario: E - Customer contact information update
     When Juan updates his contact information
+      | telefono  | 3009876543      |
+      | direccion | Carrera 45 # 22 |
     Then Juan should see the successful update message
     And Juan should view the updated information in his profile

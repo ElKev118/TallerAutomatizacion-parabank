@@ -17,7 +17,7 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisi
 public class ConsultarResumenCuentas implements Performable {
     
     public ConsultarResumenCuentas() {
-        // Constructor vacío requerido
+
     }
     
     public static ConsultarResumenCuentas bancarias() {
@@ -30,8 +30,6 @@ public class ConsultarResumenCuentas implements Performable {
         actor.attemptsTo(
             HacerClicConPausa.en(ParaBankHomePage.ACCOUNTS_OVERVIEW_LINK),
             WaitUntil.the(AccountsOverviewPage.ACCOUNTS_TABLE, isVisible()).forNoMoreThan(10).seconds(),
-            Esperar.durante(1500),
-            HacerClicConPausa.en(AccountsOverviewPage.FIRST_ACCOUNT_LINK),
             Esperar.durante(2000)
         );
     }
