@@ -42,10 +42,9 @@ src/
 
 ## Herramientas
 
-- Java JDK 17 o superior
-- Gradle 7.x o superior
-- Google Chrome (última versión)
-- IntelliJ IDEA o Eclipse (recomendado)
+- Java JDK 17
+- Gradle 9.2.1
+- Google Chrome
 
 ## Pasos
 
