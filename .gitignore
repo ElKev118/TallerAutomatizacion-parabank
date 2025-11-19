@@ -1,0 +1,27 @@
+# Build outputs
+/build/
+/target/
+*.class
+
+# Gradle
+.gradle/
+/gradle/
+!gradle/wrapper/gradle-wrapper.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Serenity reports
+/target/site/serenity/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
